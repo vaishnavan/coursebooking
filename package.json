@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/vaishnavan/coursebooking/issues"
   },
-  "homepage": "https://github.com/vaishnavan/coursebooking#readme"
+  "homepage": "https://github.com/vaishnavan/coursebooking#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.2.0",
+    "nodemon": "^2.0.15"
+  }
 }

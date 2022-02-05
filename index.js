@@ -1,6 +1,5 @@
 const express = require('express')
 const mongoose = require('mongoose');
-const router = require('./routes/booking.routes');
 const bookingRouter = require('./routes/booking.routes');
 const app = express()
 const port = process.env.PORT || 5000
@@ -17,7 +16,7 @@ app.get("/", (req, res) => {
 app.use("/v1/app", bookingRouter)
 
 app.listen((port), () => {
-    console.log(`app up and running on port ${5000}`)
+    console.log(`app up and running on port ${port}`)
 })
 
 mongoose.connect(process.env.MONGODB_ACC, (err) => {
